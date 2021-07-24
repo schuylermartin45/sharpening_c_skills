@@ -81,6 +81,7 @@ void freeMap(Map* map) {
         freeLinkedList(map->root[i]);
     }
 
+    free(map->root);
     free(map);
     printf("\nCleaned all! Good job not relying on the OS.\n");
 }
